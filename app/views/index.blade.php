@@ -35,18 +35,18 @@
 		<header>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-6 home">
+					<div class="col-sm-6 home col-xs-3">
 						<a data-scroll-nav="0">home</a>
 					</div>
-					<div class="col-sm-6 redes">
+					<div class="col-sm-6 redes col-xs-9">
 						<section>
 							<img src="{{url()}}/images/adidas.png" alt="adidas"/>
 							<a class="concurso" data-scroll-nav="1">concurso</a>
-							<a href="#" target="_blank"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
-							<a href="#" target="_blank"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
-							<a href="#" target="_blank"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
-							<a href="#" target="_blank"><img src="{{url()}}/images/youtube.jpg" alt="youtube"/></a>
-							<a href="#" target="_blank"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a>
+							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
+							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
+							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
+							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/youtube.jpg" alt="youtube"/></a>
+							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a>
 						</section>
 					</div>
 				</div>
@@ -63,8 +63,8 @@
 							<img src="{{url()}}/images/frase.png" alt="facebook" class="img-responsive frase" />
 							<form action="#" id="registro" name="registro">
 								<div class="container-inputs clearfix">
-									<label class="col-sm-4">nombres:</label>
-									<input class="col-sm-8"  type="text" name="nombres" id="nombres" required value="{{Input::old('nombres')}}" class="{{$errors->has('nombres') ? 'error' : ''}}" maxlength="50">
+										<label class="col-sm-4">nombres:</label>
+										<input class="col-sm-8"  type="text" name="nombres" id="nombres" required value="{{Input::old('nombres')}}" class="{{$errors->has('nombres') ? 'error' : ''}}" maxlength="50">
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">apellidos:</label>
@@ -73,8 +73,8 @@
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4"> teléfono/<br/>celular:</label>
 									<input class="col-sm-3" type="tel" name="telefono" id="telefono" required value="{{Input::old('telefono')}}" class="{{$errors->has('telefono') ? 'error' : ''}}" maxlength="50">
-									<label class="col-sm-1 dni"> dni:  </label>
-									<input class="col-sm-4" type="number" name="dni" id="dni" required value="{{Input::old('dni')}}" class="{{$errors->has('dni') ? 'error' : ''}}" maxlength="8">
+									<label class="col-sm-2 dni"> dni:  </label>
+									<input class="col-sm-3" type="number" name="dni" id="dni" required value="{{Input::old('dni')}}" class="{{$errors->has('dni') ? 'error' : ''}}" maxlength="8">
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">mail: </label>
