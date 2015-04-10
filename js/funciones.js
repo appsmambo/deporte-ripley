@@ -94,6 +94,15 @@ $(document).ready(function () {
 	});
 	$("footer .col-sm-10 span").click(function () {
 		$("#terminos-layer").fadeIn("slow");
+		$("footer .col-sm-10 span img.uno-terminos").fadeOut("fast", function(){
+			$("footer .col-sm-10 span img.dos-terminos").fadeIn("fast");
+		});
+	});
+	$(".btn-close").click(function () {
+		$("#terminos-layer").fadeOut("slow");
+		$("footer .col-sm-10 span img.dos-terminos").fadeOut("fast", function(){
+			$("footer .col-sm-10 span img.uno-terminos").fadeIn("fast");
+		});
 	});
 	$("#registro").validate({
 		rules: {
@@ -125,7 +134,10 @@ $(document).ready(function () {
 					} else {
 						$("#gracias-layer").fadeIn("slow");
 						setTimeout(function () {
-							$("#gracias-layer").fadeOut("slow");
+							$("#gracias-layer").fadeOut("slow", function(){
+								$(".registro-content").addClass("none");
+								$(".content-deportes-3").fadeIn("slow");
+							});
 						}, 5000);
 					}
 				},

@@ -78,6 +78,8 @@
 				<div class="content-b">
 					<div class="container-fluid">
 						<div class="col-sm-6 col-sm-offset-3">
+							<img src="images/close.jpg" class="btn-close">
+							<div class="clearfix"></div>
 							.C.E.A. Máxima 149.59%. Ejemplo: Cálculo referencial efectuado con la tasa máxima según tarifario y considerando un consumo total de S/. 1,000 a 12 meses. Si mantuviera saldo de S/. 10 o más en su tarjeta de crédito, se le cargará S/. 5.90 mensual por concepto de seguro de desgravamen. En caso corresponda, aplicará una comisión mensual por envío físico de estado de cuenta de S/. 6.90. En caso de incumplimiento en el pago, aplicará penalidad por pago fuera de fecha según tarifario vigente. I.T.F (0.005%). (*)Si usted opta realizar su compra en cuotas, el valor final de las mismas podría variar en función a la fecha de desembolso, facturación y pago del cliente. Mayor información de condiciones, restricciones y tarifas en www.bancoripley.com.pe y/o Agencias ubicadas dentro de las Tiendas Ripley. Condiciones: Promoción valida del 11/04/15 al 03/05/15 y/o agotar stock. Stock mínimo 3 unidades. Fotos referenciales. No acumulables con otras promociones. Válido sólo para consumo familiar (máx. 3 productos por cliente o tarjeta). Productos ahora o nunca son exclusivos con Tarjeta Ripley. No aplica para compras en Tienda Virtual Ripley. RD N° 0998-2015–ONAGI–DGAE–DA de “PROMOCIÓN ADIDAS– VANNA COACH”, para mayor información ingresa a www.reto42klima.com; y RD N° 1044-2015–ONAGI–DGAE–DA de “PROMOCIÓN POWERADE REVISTA DEPORTES ABRIL”, para mayor información ingresa a www.ripley.com.pe
 						</div>
 					</div>
@@ -164,6 +166,7 @@
 						</div>
 
 					</div>
+					<div class="col-sm-7 none columnas-deportes content-deportes-3 none"></div>
 					<div class="col-sm-5 content-deportes-2 columnas-deportes">
 
 					</div>
@@ -181,7 +184,9 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-10">
-						<span><img src="{{url()}}/images/terminos.jpg" alt="terminos" /></span>
+						<span>
+							<img src="{{url()}}/images/terminos.jpg" alt="terminos" class="uno-terminos"/>
+							<img src="{{url()}}/images/terminos-active.png" alt="terminos" class="dos-terminos"/></span>
 					</div>
 					<div class="col-sm-2">
 						<img src="{{url()}}/images/ripley-logo.jpg" alt="ripley" class="img-responsive"/>

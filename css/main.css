@@ -55,10 +55,14 @@ header .col-sm-6.redes section{
 header .col-sm-6.redes a.concurso{
 	display:inline-block;
 	color:#fff;
-	background:url('../images/flecha.png') no-repeat left 7px;
+	background:url('../images/flecha-top.png') no-repeat left 7px;
 	padding-left:23px;
 	margin:0 10px;
 	cursor:pointer;
+}
+header .col-sm-6.redes a.concurso.active{
+	background:url('../images/concurso-flecha.jpg') no-repeat left 7px;
+	color:#c20984;
 }
 footer{
 	bottom: 0;
@@ -99,6 +103,13 @@ footer .col-sm-2 img{
 }
 .content-deportes-2{
 	background:url('../images/deporte-2.jpg') no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	height:100%;
+}
+.content-deportes-3{
+	background:url('../images/deporte-3.jpg') no-repeat;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -236,6 +247,18 @@ label.error{
 }
 input.error{
 	border:1px solid red !important;
+}
+.uno-terminos{
+	display: block;
+}
+.dos-terminos{
+	display: none;
+}
+.btn-close{
+	float:right;
+	display: block;
+	margin-bottom: 10px;
+	cursor: pointer;
 }
 @media (max-width:767px) {
 	.content-deportes-1, .content-deportes-2{
