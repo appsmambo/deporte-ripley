@@ -4,7 +4,6 @@ class HomeController extends BaseController {
 
 	public function index()
 	{
-		echo Request::getClientIp();exit;
 		$departamentos = UbigeoDepartamento::all()->toArray();
 		return View::make('index')->with('departamentos', $departamentos);
 	}
@@ -66,7 +65,7 @@ class HomeController extends BaseController {
 			$registro->distrito		= Input::get('distrito');
 			$registro->codigo		= Input::get('codigo');
 			$registro->newsletter	= Input::get('newsletter');
-			$registro->ip			= Request::getClientIp();
+			$registro->ip			= $_SERVER['REMOTE_ADDR'];
 
 			$registro->save();
 
