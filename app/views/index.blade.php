@@ -15,6 +15,7 @@
 		<link rel="shortcut icon" href="{{url()}}/favicon.ico">
 		<script type="text/javascript" src="{{url()}}/js/modernizr.custom.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/funciones.js"></script>
 		<!--meta property="og:title" content="Timbradores Anónimos" />
 		<meta property="og:type" content="website" />
@@ -45,9 +46,9 @@
 				</div>
 			</div>
 		</header>
-		<section id="container-registro" class="container-fluid">
+		<section id="container-registro" class="container-fluid none">
 			<div class="row">
-				<div class="col-sm-6 content-deportes-1">
+				<div class="col-sm-6 content-deportes-1 columnas-deportes">
 
 				</div>
 				<div class="col-sm-4 registro-content">
@@ -74,45 +75,47 @@
 							</div>
 							<div class="container-inputs clearfix">
 								<label class="col-sm-4">D /P /distrito  </label>
-								<div class="col-sm-3 selects">
-									<select name="departamento" id="departamento">
-										<option value="0">Departamento</option>
+								<div class="col-sm-8 selects">
+									<div class="col-sm-4 selects">
+										<select name="departamento" id="departamento">
+											<option value="0">Departamento</option>
 @foreach ($departamentos as $departamento)
 <option value="{{$departamento['id']}}">{{ucwords(strtolower($departamento['departamento']))}}</option>
 @endforeach
-									</select>
+										</select>
+									</div>
+									<div class="col-sm-4 selects">
+										<select name="provincia" id="provincia">
+											<option value="0">Provincia</option>
+										</select>
+									</div>
+									<div class="col-sm-4 selects">
+										<select name="distrito" id="distrito">
+											<option value="0">Distrito</option>
+										</select>
+									</div>
 								</div>
-								<div class="col-sm-3 selects">
-									<select name="provincia" id="provincia">
-										<option value="0">Provincia</option>
-									</select>
+								<div class="container-inputs clearfix">
+									<label class="col-sm-4">código suscripcion </label>
+									<input class="col-sm-8" type="number" name="codigo" id="codigo" required value="{{Input::old('codigo')}}" class="{{$errors->has('codigo') ? 'error' : ''}}" maxlength="13">
 								</div>
-								<div class="col-sm-2 selects">
-									<select name="distrito" id="distrito">
-										<option value="0">Distrito</option>
-									</select>
+								<div class="container-inputs clearfix">
+									<div class="col-sm-4 codigo"> *encuentra tu código al final  de tu ticket de compra</div>
+									<div class="col-sm-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" /></div>
 								</div>
-							</div>
-							<div class="container-inputs clearfix">
-								<label class="col-sm-4">código suscripcion </label>
-								<input class="col-sm-8" type="number" name="codigo" id="codigo" required value="{{Input::old('codigo')}}" class="{{$errors->has('codigo') ? 'error' : ''}}" maxlength="13">
-							</div>
-							<div class="container-inputs clearfix">
-								<div class="col-sm-4 codigo"> *encuentra tu código al final  de tu ticket de compra</div>
-								<div class="col-sm-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" /></div>
-							</div>
-							<input type="image" src="{{url()}}/images/btn-enviar.png" value="enviar" id="enviar">
-						</form>
+								<input type="image" src="{{url()}}/images/btn-enviar.png" value="enviar" id="enviar" class="btn-enviar">
+							</form>
+						</div>
+
 					</div>
+					<div class="col-sm-5 content-deportes-2 columnas-deportes">
 
-				</div>
-				<div class="col-sm-2 content-deportes-2">
-
+					</div>
 				</div>
 			</div>
 		</section>
 		<section id="container-premios">
-
+			
 		</section>
 		<footer>
 			<div class="container">
@@ -135,18 +138,12 @@
 							console.log('error');
 						},
 						dataType: 'json',
-						success: function(data) {
+						success: function (data) {
 							if (data.success == 'error') {
 								console.log(data);
 							} else {
 								console.log('ok');
 							}
-
-							/*var $title = $('<h1>').text(data.talks[0].talk_title);
-							var $description = $('<p>').text(data.talks[0].talk_description);
-							$('#info')
-									.append($title)
-									.append($description);*/
 						},
 						type: 'POST'
 					});

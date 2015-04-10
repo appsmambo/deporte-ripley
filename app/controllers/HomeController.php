@@ -4,9 +4,15 @@ class HomeController extends BaseController {
 
 	public function index()
 	{
-		//$departamentos = UbigeoDepartamento::all();
-		//print_r($departamentos);
-		return View::make('index');
+		$departamentos = UbigeoDepartamento::all()->toArray();
+		return View::make('index')->with('departamentos', $departamentos);
+	}
+	
+	public function ajaxProvincias()
+	{
+		$departamento = Input::get('id', 15);
+		$provincias = UbigeoProvincia::where('id_departamento', $departamento)->get();
+		return $provincias->toJson();
 	}
 	
 	public function ajaxRegistro()

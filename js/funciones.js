@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	var content = $(window).height() - 110;
-	$('#container-registro').height(content);
+	var content = $(window).height() - 130;
+	$('#container-registro, .columnas-deportes').height(content);
 	$('select#departamento').each(function () {
 		var title = 'Seleccione';
 		if ($('option:selected', this).val() != '')
@@ -37,5 +37,11 @@ $(document).ready(function () {
 					$(this).next().text(val);
 				})
 	});
+	 $('input:checkbox').screwDefaultButtons({
+        image: 'url("images/checkbox.png")',
+        width: 22,
+        height: 21
+    });
+
 
 });
