@@ -33,7 +33,6 @@ header{
 	top: 0;
 }
 header .col-sm-6.home{
-	padding-left:30px;
 	margin-top:10px;
 }
 header .col-sm-6.home a{
@@ -47,11 +46,10 @@ header .col-sm-6.home a{
 	color:#fff;
 }
 header .col-sm-6.redes{
-	padding-right: 30px;
 	float:right;
 }
 header .col-sm-6.redes section{
-	width:400px;
+	width:387px;
 	float:right;
 }
 header .col-sm-6.redes a.concurso{
@@ -111,6 +109,7 @@ footer .col-sm-2 img{
 	background:#be006c;
 	padding:0 0 0 0;
 	height:100px;
+	border-radius:0 23px 23px 0;
 }
 .registro-content .frase{
 	padding-right: 10px;

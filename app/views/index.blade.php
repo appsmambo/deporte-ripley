@@ -19,7 +19,7 @@
 		<script type="text/javascript" src="{{url()}}/js/scrollIt.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/funciones.js"></script>
 		<script>
-			var urlBase = '{{url()}}';
+var urlBase = '{{url()}}';
 		</script>
 		<!--meta property="og:title" content="Timbradores Anónimos" />
 		<meta property="og:type" content="website" />
@@ -33,20 +33,22 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<div class="col-sm-6 home">
-					<a data-scroll-nav="0">home</a>
-				</div>
-				<div class="col-sm-6 redes">
-					<section>
-						<img src="{{url()}}/images/adidas.png" alt="adidas"/>
-						<a class="concurso" data-scroll-nav="1">concurso</a>
-						<a href="#" target="_blank"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
-						<a href="#" target="_blank"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
-						<a href="#" target="_blank"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
-						<a href="#" target="_blank"><img src="{{url()}}/images/youtube.jpg" alt="youtube"/></a>
-						<a href="#" target="_blank"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a>
-					</section>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 home">
+						<a data-scroll-nav="0">home</a>
+					</div>
+					<div class="col-sm-6 redes">
+						<section>
+							<img src="{{url()}}/images/adidas.png" alt="adidas"/>
+							<a class="concurso" data-scroll-nav="1">concurso</a>
+							<a href="#" target="_blank"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
+							<a href="#" target="_blank"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
+							<a href="#" target="_blank"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
+							<a href="#" target="_blank"><img src="{{url()}}/images/youtube.jpg" alt="youtube"/></a>
+							<a href="#" target="_blank"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a>
+						</section>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -127,12 +129,15 @@
 			</div>
 		</section>
 		<footer>
-			<div class="container">
-				<div class="col-sm-10">
-					<span><img src="{{url()}}/images/terminos.jpg" alt="terminos" /></span>
-				</div>
-				<div class="col-sm-2">
-					<img src="{{url()}}/images/ripley-logo.jpg" alt="ripley" class="img-responsive"/>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-10">
+						<span><img src="{{url()}}/images/terminos.jpg" alt="terminos" /></span>
+					</div>
+					<div class="col-sm-2">
+						<img src="{{url()}}/images/ripley-logo.jpg" alt="ripley" class="img-responsive"/>
+					</div>
 				</div>
 			</div>
 		</footer>
