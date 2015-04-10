@@ -108,6 +108,13 @@ footer .col-sm-2 img{
 	-webkit-background-size: cover;
 	height:100%;
 }
+.content-deportes-3{
+	background:url('../images/deporte-3.jpg') no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	height:100%;
+}
 .layer-terminos-gracias{
 	opacity:0.8;
 	background: #000;

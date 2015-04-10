@@ -134,7 +134,10 @@ $(document).ready(function () {
 					} else {
 						$("#gracias-layer").fadeIn("slow");
 						setTimeout(function () {
-							$("#gracias-layer").fadeOut("slow");
+							$("#gracias-layer").fadeOut("slow", function(){
+								$(".registro-content").addClass("none");
+								$(".content-deportes-3").fadeIn("slow");
+							});
 						}, 5000);
 					}
 				},
