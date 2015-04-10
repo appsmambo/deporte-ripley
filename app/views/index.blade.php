@@ -52,11 +52,11 @@
 						<section>
 							<img src="{{url()}}/images/adidas.png" alt="adidas"/>
 							<a class="concurso" data-scroll-nav="1">concurso</a>
-							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
-							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
-							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
-							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/youtube.jpg" alt="youtube"/></a>
-							<a href="#" target="_blank" class="iconos-redes"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a>
+							<a href="https://www.facebook.com/RipleyPeru" target="_blank" class="iconos-redes"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
+							<a href="https://twitter.com/ripleyenperu" target="_blank" class="iconos-redes"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
+							<a href="https://instagram.com/ripleyperu/" target="_blank" class="iconos-redes"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
+							<a href="https://www.youtube.com/user/TiendasRipleyPeru" target="_blank" class="iconos-redes"><img src="{{url()}}/images/youtube.jpg" alt="youtube"/></a>
+							<a href="https://www.pinterest.com/ripleyperu/" target="_blank" class="iconos-redes"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a>
 						</section>
 					</div>
 				</div>
