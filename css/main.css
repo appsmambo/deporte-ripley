@@ -72,11 +72,10 @@ footer .col-sm-2 img{
 	width:80%;
 }
 #container-registro{
-	border:1px solid red;
 	padding-top:10px;
 }
 .content-deportes-1{
-	background:url('../images/deporte-1.jpg') no-repeat;
+	background:url('../images/deporte-1.jpg') no-repeat right;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -91,7 +90,8 @@ footer .col-sm-2 img{
 }
 .registro-content{
 	background:#be006c;
-	padding:25px 0;
+	padding:0 0 0 0;
+	height:100px;
 }
 .registro-content .frase{
 	padding-right: 10px;
@@ -105,7 +105,7 @@ footer .col-sm-2 img{
 }
 .registro-content input{
 	border: 0;
-	height:30px;
+	height:33px;
 	color:#000;
 }
 .registro-content select{
@@ -117,7 +117,7 @@ footer .col-sm-2 img{
 	padding:0 5px;
 }
 .container-inputs{
-	margin:0 0 8px 0;
+	margin:0 0 10px 0;
 	position:relative;
 }
 .container-inputs .codigo{
@@ -125,9 +125,15 @@ footer .col-sm-2 img{
 	font-size: 10px;
 	line-height: 12px;
 }
+.registro-content .container-inputs .informacion {
+	text-align: right;
+	padding-right:0;
+	padding-left:5px;
+}
 .registro-content .container-inputs .informacion label{
 	font-family: Arial ;
-	font-size: 13px;
+	font-size: 11px;
+	float:left;
 }
 .container-inputs .selects{
 	position: relative;
@@ -160,4 +166,14 @@ span.select1, span.select2, span.select3{
     color:#000;
     font-size:15px;
     line-height:26px;
+}
+.styledCheckbox{
+	display: inline-block;
+	height:21px;
+	margin-left:10px;
+}
+.btn-enviar{
+	margin:0 auto;
+	width:120px;
+	display: block;
 }
