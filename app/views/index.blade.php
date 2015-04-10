@@ -20,7 +20,7 @@
 		<script type="text/javascript" src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/funciones.js?ver=1.10"></script>
 		<script>
-			var urlBase = '{{url()}}';
+var urlBase = '{{url()}}';
 		</script>
 		<link rel="canonical" href="{{url()}}/" />
 		<meta property="fb:app_id" content="1622116521355776" />
@@ -32,10 +32,17 @@
 		<meta property="og:site_name" content="Gana con Ripley y Adidas" />
 		<meta property="og:description" content="Entra a www.reto42klima.com y gana membresías en el gimnasio de Vanna Coach." />
 		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 			ga('create', 'UA-61748957-1', 'auto');
 			ga('require', 'displayfeatures');
 			ga('send', 'pageview');
@@ -102,69 +109,72 @@
 		<section id="container-registro" class="container-fluid" data-scroll-index="0">
 
 
-			<div class="row">
+			<div class="row container-padding">
 
 				<div class="col-sm-6 content-deportes-1 columnas-deportes">
 
 				</div>
 				<div class="col-sm-6">
-					<div class="col-sm-7 registro-content columnas-deportes">
-						<div class="col-sm-12">
-							<img src="{{url()}}/images/frase.png" alt="facebook" class="img-responsive frase" />
-							<form action="#" id="registro" name="registro">
-								<div class="container-inputs clearfix">
-									<label class="col-sm-4 col-xs-4">nombres:</label>
-									<input class="col-sm-8 col-xs-8"  type="text" name="nombres" id="nombres" required maxlength="50">
-								</div>
-								<div class="container-inputs clearfix">
-									<label class="col-sm-4 col-xs-4">apellidos:</label>
-									<input class="col-sm-8 col-xs-8" type="text" name="apellidos" id="apellidos" required maxlength="50">
-								</div>
-								<div class="container-inputs clearfix">
-									<label class="col-sm-4 col-xs-4"> teléfono/<br/>celular:</label>
-									<input class="col-sm-3 col-xs-3" type="tel" name="telefono" id="telefono" required maxlength="50">
-									<label class="col-sm-2 col-xs-2 dni"> dni:  </label>
-									<input class="col-sm-3 col-xs-3" type="tel" name="dni" id="dni" required maxlength="8">
-								</div>
-								<div class="container-inputs clearfix">
-									<label class="col-sm-4 col-xs-4">mail: </label>
-									<input class="col-sm-8 col-xs-8" type="email" name="email" id="email" required maxlength="100">
-								</div>
-								<div class="container-inputs clearfix">
-									<label class="col-sm-4 col-xs-4">D /P /distrito  </label>
-									<div class="col-sm-8 col-xs-8 selects">
-										<div class="col-sm-4 col-xs-4 selects">
-											<select name="departamento" id="departamento">
-												<option value="0">Departamento</option>
-												@foreach ($departamentos as $departamento)
-												<option value="{{$departamento['id']}}">{{ucwords(strtolower($departamento['departamento']))}}</option>
-												@endforeach
-											</select>
+					<div class="col-sm-7 registro-content columnas-deportes ">
+						<div class="content-a-registro">
+							<div class="content-b-registro">
+								<div class="col-sm-12">
+									<img src="{{url()}}/images/frase.png" alt="facebook" class="img-responsive frase" />
+									<form action="#" id="registro" name="registro">
+										<div class="container-inputs clearfix">
+											<label class="col-sm-4 col-xs-4 label-line">nombres:</label>
+											<input class="col-sm-8 col-xs-8"  type="text" name="nombres" id="nombres" required maxlength="50">
 										</div>
-										<div class="col-sm-4 col-xs-4 selects">
-											<select name="provincia" id="provincia">
-												<option value="0">Provincia</option>
-											</select>
+										<div class="container-inputs clearfix">
+											<label class="col-sm-4 col-xs-4 label-line">apellidos:</label>
+											<input class="col-sm-8 col-xs-8" type="text" name="apellidos" id="apellidos" required maxlength="50">
 										</div>
-										<div class="col-sm-4 col-xs-4 selects">
-											<select name="distrito" id="distrito">
-												<option value="0">Distrito</option>
-											</select>
+										<div class="container-inputs clearfix">
+											<label class="col-sm-4 col-xs-4"> teléfono/<br/>celular:</label>
+											<input class="col-sm-3 col-xs-3" type="tel" name="telefono" id="telefono" required maxlength="50">
+											<label class="col-sm-2 col-xs-2 dni label-line"> dni:  </label>
+											<input class="col-sm-3 col-xs-3" type="tel" name="dni" id="dni" required maxlength="8">
 										</div>
-									</div>
+										<div class="container-inputs clearfix">
+											<label class="col-sm-4 col-xs-4 label-line">mail: </label>
+											<input class="col-sm-8 col-xs-8" type="email" name="email" id="email" required maxlength="100">
+										</div>
+										<div class="container-inputs clearfix">
+											<label class="col-sm-4 col-xs-4">D /P /distrito  </label>
+											<div class="col-sm-8 col-xs-8 selects">
+												<div class="col-sm-4 col-xs-4 selects">
+													<select name="departamento" id="departamento">
+														<option value="0">Departamento</option>
+														@foreach ($departamentos as $departamento)
+														<option value="{{$departamento['id']}}">{{ucwords(strtolower($departamento['departamento']))}}</option>
+														@endforeach
+													</select>
+												</div>
+												<div class="col-sm-4 col-xs-4 selects">
+													<select name="provincia" id="provincia">
+														<option value="0">Provincia</option>
+													</select>
+												</div>
+												<div class="col-sm-4 col-xs-4 selects">
+													<select name="distrito" id="distrito">
+														<option value="0">Distrito</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="container-inputs clearfix">
+											<label class="col-sm-4 col-xs-4">código suscripcion </label>
+											<input class="col-sm-8 col-xs-8" type="tel" name="codigo" id="codigo" required maxlength="13">
+										</div>
+										<div class="container-inputs clearfix">
+											<div class="col-sm-4 col-xs-4 codigo"> *encuentra tu código al final  de tu ticket de compra</div>
+											<div class="col-sm-8 col-xs-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" value="1" /></div>
+										</div>
+										<input type="image" src="{{url()}}/images/btn-enviar.png" value="enviar" id="enviar" class="btn-enviar">
+									</form>
 								</div>
-								<div class="container-inputs clearfix">
-									<label class="col-sm-4 col-xs-4">código suscripcion </label>
-									<input class="col-sm-8 col-xs-8" type="tel" name="codigo" id="codigo" required maxlength="13">
-								</div>
-								<div class="container-inputs clearfix">
-									<div class="col-sm-4 col-xs-4 codigo"> *encuentra tu código al final  de tu ticket de compra</div>
-									<div class="col-sm-8 col-xs-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" value="1" /></div>
-								</div>
-								<input type="image" src="{{url()}}/images/btn-enviar.png" value="enviar" id="enviar" class="btn-enviar">
-							</form>
+							</div>
 						</div>
-
 					</div>
 					<div class="col-sm-7 col-xs-7 none columnas-deportes content-deportes-3 none"></div>
 					<div class="col-sm-5 col-xs-5 content-deportes-2 columnas-deportes">
@@ -185,8 +195,13 @@
 				<div class="row">
 					<div class="col-sm-10 col-xs-10">
 						<span>
-							<img src="{{url()}}/images/terminos.jpg" alt="terminos" class="uno-terminos"/>
-							<img src="{{url()}}/images/terminos-active.png" alt="terminos" class="dos-terminos"/></span>
+							<img src="{{url()}}/images/terminos.jpg" alt="terminos" class="uno-terminos terminos-footer"/>
+							<img src="{{url()}}/images/terminos-active.png" alt="terminos" class="dos-terminos terminos-footer"/></span>
+							<a href="https://www.facebook.com/RipleyPeru" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
+							<a href="https://twitter.com/ripleyenperu" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
+							<a href="https://instagram.com/ripleyperu/" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
+							<a href="https://www.youtube.com/user/TiendasRipleyPeru" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/youtube.jpg" alt="youtube"/></a>
+							<a href="https://www.pinterest.com/ripleyperu/" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a>
 					</div>
 					<div class="col-sm-2 col-xs-2">
 						<img src="{{url()}}/images/ripley-logo.jpg" alt="ripley" class="img-responsive"/>

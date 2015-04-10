@@ -38,7 +38,7 @@ header .col-sm-6.home{
 header .col-sm-6.home a{
 	margin:0;
 	padding:0 0 0 32px;
-	background:url('../images/icono-home.png') no-repeat left 0;
+	background:url('../images/home-activo.png') no-repeat left 0;
 	display: block;
 	cursor:pointer;
 	height:17px;
@@ -95,21 +95,24 @@ footer .col-sm-2 img{
 	width:100%;
 }
 .content-deportes-1{
-	background:url('../images/deporte-1.jpg') no-repeat right;
+	background-image:url('../images/deporte-1.jpg');
+	background-repeat: no-repeat;
+	background-position: top right;
 	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
 	height:100%;
 }
 .content-deportes-2{
-	background:url('../images/deporte-2.jpg') no-repeat;
+	background:url('../images/deporte-2.jpg') no-repeat top left;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	height:100%;
 }
+.container-padding{
+	padding-left:15px;
+}
 .content-deportes-3{
-	background:url('../images/deporte-3.jpg') no-repeat;
+	background:url('../images/deporte-3.jpg') no-repeat top center;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -134,25 +137,33 @@ footer .col-sm-2 img{
 	width:100%;
 	height:100%;
 }
+.content-a-registro{
+	display: table;
+	height:100%;
+}
+.content-b-registro{
+	display: table-cell;
+	vertical-align: middle;
+}
 .content-b{
 	display: table-cell;
 	vertical-align: middle;
 }
 .registro-content{
-	background:#be006c;
+	background:#f61bad;
 	padding:0 0 0 0;
 	height:100px;
 	border-radius:0 23px 23px 0;
 }
 .registro-content .frase{
-	padding-right: 10px;
+	padding-left: 10px;
 }
 .registro-content {
 	border: 0;
 }
 .registro-content label{
-	font-size:15px;
-	line-height: 18px;
+	font-size:17px;
+	line-height: 13px;
 }
 .registro-content input{
 	border: 0;
@@ -186,6 +197,9 @@ footer .col-sm-2 img{
 	font-size: 11px;
 	float:left;
 }
+.label-line{
+	line-height: 30px !important;
+}
 .container-inputs .selects{
 	position: relative;
 	padding: 0 0;
@@ -209,14 +223,14 @@ span.select1, span.select2, span.select3{
     width:98%;
     height:30px;
     line-height:36px;
-    text-indent:2px;
+    text-indent:3px;
     background:url('../images/select.jpg') no-repeat right;
     cursor:pointer;
     z-index:0;
     border:0;
     color:#000;
-    font-size:11px;
-    line-height:26px;
+    font-size:8px;
+    line-height:30px;
 }
 .styledCheckbox{
 	display: inline-block;
@@ -260,6 +274,9 @@ input.error{
 	margin-bottom: 10px;
 	cursor: pointer;
 }
+.iconos-redes-footer{
+	display: none;
+}
 @media (max-width:767px) {
 	.content-deportes-1, .content-deportes-2{
 		display:none;
@@ -275,7 +292,10 @@ input.error{
 		position:inherit;
 	}
 	#container-premios{
-		margin-top:15%;
+		margin-top:45%;
+	}
+	body{
+		padding-bottom:0;
 	}
 }
 @media (max-width:520px) {
@@ -284,5 +304,18 @@ input.error{
 	}
 	header .col-sm-6.redes section{
 		text-align: right;
+	}
+	.iconos-redes-footer{
+		display: inline-block;
+		float:left;
+	}
+	.iconos-redes-footer img{
+		max-width: 55%;
+	}
+	.terminos-footer{
+		float:left;
+	}
+	footer .col-sm-10{
+		text-align: left;
 	}
 }
