@@ -17,6 +17,9 @@
 		<script type="text/javascript" src="{{url()}}/js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/funciones.js"></script>
+		<script>
+			var urlBase = '{{url()}}';
+		</script>
 		<!--meta property="og:title" content="Timbradores Anónimos" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://timbradoresanonimos.com/" />
@@ -129,48 +132,5 @@
 				</div>
 			</div>
 		</footer>
-		<script>
-$(document).ready(function () {
-	$('#enviar').click(function (e) {
-		e.preventDefault();
-		$.ajax({
-			url: '{{url()}}/registro',
-			data: $('#registro').serialize(),
-			error: function () {
-				console.log('error');
-			},
-			dataType: 'json',
-			success: function (data) {
-				if (data.success == 'error') {
-					console.log(data);
-				} else {
-					console.log('ok');
-				}
-			},
-			type: 'POST'
-		});
-	});
-	$('#departamento').change(function () {
-		var id;
-		id = $(this).val();
-		$.ajax({
-			url: '{{url()}}/getProvincias',
-			data: 'id=' + id,
-			error: function () {
-				console.log('error');
-			},
-			dataType: 'json',
-			success: function (data) {
-				var html;
-				$.each(data, function (i, item) {
-					html += '<option value="' + item.id + '">' + item.provincia + '</option>';
-				});
-				$('#provincia').html(html);
-			},
-			type: 'POST'
-		});
-	});
-});
-		</script>
 	</body>
 </html>

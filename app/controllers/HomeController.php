@@ -14,6 +14,12 @@ class HomeController extends BaseController {
 		$provincias = UbigeoProvincia::where('id_departamento', $departamento)->get();
 		return $provincias->toJson();
 	}
+	public function ajaxDistritos()
+	{
+		$provincia = Input::get('id', 127);
+		$distritos = UbigeoDistrito::where('id_provincia', $provincia)->get();
+		return $distritos->toJson();
+	}
 	
 	public function ajaxRegistro()
 	{

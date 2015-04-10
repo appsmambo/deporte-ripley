@@ -1,3 +1,6 @@
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
 $(document).ready(function () {
 	var content = $(window).height() - 130;
 	$('#container-registro, .columnas-deportes').height(content);
@@ -42,6 +45,63 @@ $(document).ready(function () {
         width: 22,
         height: 21
     });
-
-
+	$('#enviar').click(function (e) {
+		e.preventDefault();
+		$.ajax({
+			url: urlBase + '/registro',
+			data: $('#registro').serialize(),
+			error: function () {
+				console.log('error');
+			},
+			dataType: 'json',
+			success: function (data) {
+				if (data.success == 'error') {
+					console.log(data);
+				} else {
+					console.log('ok');
+				}
+			},
+			type: 'POST'
+		});
+	});
+	$('#departamento').change(function () {
+		var id;
+		id = $(this).val();
+		$.ajax({
+			url: urlBase + '/getProvincias',
+			data: 'id=' + id,
+			error: function () {
+				console.log('error');
+			},
+			dataType: 'json',
+			success: function (data) {
+				var html;
+				$.each(data, function (i, item) {
+					html += '<option value="' + item.id + '">' + toTitleCase(item.provincia.toLowerCase()) + '</option>';
+				});
+				$('#provincia').html(html);
+			},
+			type: 'POST'
+		});
+	});
+	$('#provincia').change(function () {
+		var id;
+		id = $(this).val();
+		$.ajax({
+			url: urlBase + '/getDistritos',
+			data: 'id=' + id,
+			error: function () {
+				console.log('error');
+			},
+			dataType: 'json',
+			success: function (data) {
+				var html;
+				$.each(data, function (i, item) {
+					html += '<option value="' + item.id + '">' + toTitleCase(item.distrito.toLowerCase()) + '</option>';
+				});
+				$('#distrito').html(html);
+			},
+			type: 'POST'
+		});
+	});
 });
