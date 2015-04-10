@@ -119,7 +119,7 @@ $(document).ready(function () {
 	$("footer .col-sm-10 span").click(function () {
 		$("#terminos-layer").fadeIn("slow");
 	});
-	$("#signupForm").validate({
+	$("#registro").validate({
 		rules: {
 			nombres: "required",
 			apellidos: "required",
@@ -133,7 +133,7 @@ $(document).ready(function () {
 			distrito: "required"
 		}
 	});
-	$('.numbersOnly').keyup(function () {
+	$('#dni').keyup(function () {
 		this.value = this.value.replace(/[^0-9\.]/g, '');
 	});
 });

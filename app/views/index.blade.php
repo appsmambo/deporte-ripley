@@ -75,7 +75,7 @@ var urlBase = '{{url()}}';
 				</div>
 			</div>
 		</div>
-		<div class="layer-error none" id="error-layer">
+		<div class="layer-terminos-gracias none" id="error-layer">
 			<div class="content-a">
 				<div class="content-b">
 					<div class="container-fluid">
@@ -113,7 +113,7 @@ var urlBase = '{{url()}}';
 									<label class="col-sm-4"> teléfono/<br/>celular:</label>
 									<input class="col-sm-3" type="tel" name="telefono" id="telefono" required value="{{Input::old('telefono')}}" class="{{$errors->has('telefono') ? 'error' : ''}}" maxlength="50">
 									<label class="col-sm-2 dni"> dni:  </label>
-									<input class="col-sm-3" type="number" name="dni" id="dni" class="numbersOnly" required value="{{Input::old('dni')}}" class="{{$errors->has('dni') ? 'error' : ''}}" maxlength="8">
+									<input class="col-sm-3" type="number" name="dni" id="dni" required value="{{Input::old('dni')}}" class="{{$errors->has('dni') ? 'error' : ''}}" maxlength="8">
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">mail: </label>
