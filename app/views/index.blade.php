@@ -20,17 +20,26 @@
 		<script type="text/javascript" src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/funciones.js?ver=1.10"></script>
 		<script>
-var urlBase = '{{url()}}';
+			var urlBase = '{{url()}}';
 		</script>
-		<!--meta property="og:title" content="Timbradores Anónimos" />
+		<link rel="canonical" href="{{url()}}/" />
+		<meta property="fb:app_id" content="1622116521355776" />
+		<meta property="fb:admins" content="100008010128050" />
+		<meta property="og:title" content="Gana con Ripley y Adidas" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://timbradoresanonimos.com/" />
-		<meta property="og:image" content="http://timbradoresanonimos.com/images/img-entel.png" />
-		<meta property="og:site_name" content="Timbradores Anónimos" />
-		<meta property="og:description" content="Descubre qué grado de timbrador eres y qué puedes hacer para remediarlo. Responde nuestro test y recibe tu diagnóstico." />
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="https://twitter.com/EntelPeru" />
-		<meta name="twitter:description" content="Descubre qué grado de timbrador eres y qué puedes hacer para remediarlo. Responde nuestro test y recibe tu diagnóstico. " /-->
+		<meta property="og:url" content="{{url()}}/" />
+		<meta property="og:image" content="{{url()}}/images/compartir.png" />
+		<meta property="og:site_name" content="Gana con Ripley y Adidas" />
+		<meta property="og:description" content="Entra a www.reto42klima.com y gana membresías en el gimnasio de Vanna Coach." />
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-61748957-1', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		</script>
 	</head>
 	<body>
 		<header>
@@ -103,21 +112,21 @@ var urlBase = '{{url()}}';
 							<form action="#" id="registro" name="registro">
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">nombres:</label>
-									<input class="col-sm-8"  type="text" name="nombres" id="nombres" required value="{{Input::old('nombres')}}" class="{{$errors->has('nombres') ? 'error' : ''}}" maxlength="50">
+									<input class="col-sm-8"  type="text" name="nombres" id="nombres" required maxlength="50">
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">apellidos:</label>
-									<input class="col-sm-8" type="text" name="apellidos" id="apellidos" required value="{{Input::old('apellidos')}}" class="{{$errors->has('apellidos') ? 'error' : ''}}" maxlength="50">
+									<input class="col-sm-8" type="text" name="apellidos" id="apellidos" required maxlength="50">
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4"> teléfono/<br/>celular:</label>
-									<input class="col-sm-3" type="tel" name="telefono" id="telefono" required value="{{Input::old('telefono')}}" class="{{$errors->has('telefono') ? 'error' : ''}}" maxlength="50">
+									<input class="col-sm-3" type="tel" name="telefono" id="telefono" required maxlength="50">
 									<label class="col-sm-2 dni"> dni:  </label>
-									<input class="col-sm-3" type="number" name="dni" id="dni" required value="{{Input::old('dni')}}" class="{{$errors->has('dni') ? 'error' : ''}}" maxlength="8">
+									<input class="col-sm-3" type="tel" name="dni" id="dni" required maxlength="8">
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">mail: </label>
-									<input class="col-sm-8" type="email" name="email" id="email" required value="{{Input::old('email')}}" class="{{$errors->has('email') ? 'error' : ''}}" maxlength="100">
+									<input class="col-sm-8" type="email" name="email" id="email" required maxlength="100">
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">D /P /distrito  </label>
@@ -144,11 +153,11 @@ var urlBase = '{{url()}}';
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">código suscripcion </label>
-									<input class="col-sm-8" type="number" name="codigo" id="codigo" required value="{{Input::old('codigo')}}" class="{{$errors->has('codigo') ? 'error' : ''}}" maxlength="13">
+									<input class="col-sm-8" type="tel" name="codigo" id="codigo" required maxlength="13">
 								</div>
 								<div class="container-inputs clearfix">
 									<div class="col-sm-4 codigo"> *encuentra tu código al final  de tu ticket de compra</div>
-									<div class="col-sm-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" /></div>
+									<div class="col-sm-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" value="1" /></div>
 								</div>
 								<input type="image" src="{{url()}}/images/btn-enviar.png" value="enviar" id="enviar" class="btn-enviar">
 							</form>

@@ -231,10 +231,10 @@ span.select1, span.select2, span.select3{
 	bottom:65px;
 	right:0;
 }
-.label-error{
-	display:none;
+label.error{
+	display:none !important;
 }
-.input-error{
+input.error{
 	border:1px solid red !important;
 }
 @media (max-width:767px) {

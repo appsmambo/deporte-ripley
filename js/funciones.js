@@ -47,31 +47,6 @@ $(document).ready(function () {
 		width: 22,
 		height: 21
 	});
-	$('#enviar').click(function (e) {
-		e.preventDefault();
-		$.ajax({
-			url: urlBase + '/registro',
-			data: $('#registro').serialize(),
-			error: function () {
-				console.log('error');
-			},
-			dataType: 'json',
-			success: function (data) {
-				if (data.success == 'error') {
-					$("#error-layer").fadeIn("slow");
-					setTimeout(function () {
-						$("#error-layer").fadeOut("slow");
-					}, 5000);
-				} else {
-					$("#gracias-layer").fadeIn("slow");
-					setTimeout(function () {
-						$("#gracias-layer").fadeOut("slow");
-					}, 5000);
-				}
-			},
-			type: 'POST'
-		});
-	});
 	$('#departamento').change(function () {
 		var id;
 		id = $(this).val();
@@ -87,7 +62,8 @@ $(document).ready(function () {
 				$.each(data, function (i, item) {
 					html += '<option value="' + item.id + '">' + toTitleCase(item.provincia.toLowerCase()) + '</option>';
 				});
-				$('#provincia').html(html);
+				$('#provincia').val('').trigger('change').html(html);
+				$('#distrito').val('').trigger('change');
 			},
 			type: 'POST'
 		});
@@ -107,7 +83,7 @@ $(document).ready(function () {
 				$.each(data, function (i, item) {
 					html += '<option value="' + item.id + '">' + toTitleCase(item.distrito.toLowerCase()) + '</option>';
 				});
-				$('#distrito').html(html);
+				$('#distrito').val('').trigger('change').html(html);
 			},
 			type: 'POST'
 		});
@@ -131,6 +107,30 @@ $(document).ready(function () {
 			departamento: "required",
 			provincia: "required",
 			distrito: "required"
+		},
+		submitHandler: function(form) {
+			$.ajax({
+				url: urlBase + '/registro',
+				data: $('#registro').serialize(),
+				error: function () {
+					console.log('error');
+				},
+				dataType: 'json',
+				success: function (data) {
+					if (data.success == 'error') {
+						$("#error-layer").fadeIn("slow");
+						setTimeout(function () {
+							$("#error-layer").fadeOut("slow");
+						}, 5000);
+					} else {
+						$("#gracias-layer").fadeIn("slow");
+						setTimeout(function () {
+							$("#gracias-layer").fadeOut("slow");
+						}, 5000);
+					}
+				},
+				type: 'POST'
+			});
 		}
 	});
 	$('#dni').keyup(function () {
