@@ -132,7 +132,7 @@ footer .col-sm-2 img{
 	
 }
 .registro-content .dni{
-	padding:0 5px;
+	padding:0 10px;
 }
 .container-inputs{
 	margin:0 0 10px 0;
@@ -176,13 +176,13 @@ span.select1, span.select2, span.select3{
     width:98%;
     height:30px;
     line-height:36px;
-    text-indent:10px;
+    text-indent:2px;
     background:url('../images/select.jpg') no-repeat right;
     cursor:pointer;
     z-index:0;
     border:0;
     color:#000;
-    font-size:15px;
+    font-size:11px;
     line-height:26px;
 }
 .styledCheckbox{
@@ -208,4 +208,32 @@ span.select1, span.select2, span.select3{
 	position: absolute;
 	bottom:65px;
 	right:0;
+}
+@media (max-width:767px) {
+	.content-deportes-1, .content-deportes-2{
+		display:none;
+	}
+	body{
+		overflow: scroll;
+	}
+	footer{
+		position:inherit;
+	}
+	.columnas-deportes{
+		height:auto !important;
+	}
+	.registro-content label{
+		width:40%;
+	}
+	.registro-content input{
+		width:58%;
+	}
+}
+@media (max-width:520px) {
+	header .col-sm-6.redes section a.iconos-redes{
+		display:none;
+	}
+	header .col-sm-6.redes section{
+		text-align: right;
+	}
 }
