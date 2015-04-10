@@ -91,9 +91,9 @@
 				<div class="content-b">
 					<div class="container-fluid">
 						<div class="col-sm-6 col-sm-offset-3">
-							<h4>
+							<h3>
 								Hubo un error al registrar sus datos, vuelva a intentarlo.
-							</h4>
+							</h3>
 						</div>
 					</div>
 				</div>
