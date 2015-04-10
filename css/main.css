@@ -264,9 +264,6 @@ input.error{
 	.content-deportes-1, .content-deportes-2{
 		display:none;
 	}
-	footer{
-		position:inherit;
-	}
 }
 @media (max-width:520px) {
 	header .col-sm-6.redes section a.iconos-redes{
