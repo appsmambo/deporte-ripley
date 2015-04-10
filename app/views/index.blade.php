@@ -17,9 +17,9 @@
 		<script type="text/javascript" src="{{url()}}/js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/scrollIt.min.js"></script>
-		<script type="text/javascript" src="{{url()}}/js/funciones.js"></script>
+		<script type="text/javascript" src="{{url()}}/js/funciones.js?ver=1.10"></script>
 		<script>
-var urlBase = '{{url()}}';
+			var urlBase = '{{url()}}';
 		</script>
 		<!--meta property="og:title" content="Timbradores Anónimos" />
 		<meta property="og:type" content="website" />

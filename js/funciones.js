@@ -104,7 +104,8 @@ $(document).ready(function () {
 			type: 'POST'
 		});
 	});
-	$.scrollIt({           // key code to navigate to the previous section
-		easing: 'linear'          // offste (in px) for fixed top navigation
-	  });
+	$.scrollIt({
+		easing: 'linear',
+		topOffset: -66
+	});
 });
