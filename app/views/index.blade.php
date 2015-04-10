@@ -28,7 +28,7 @@
 		<meta property="og:title" content="Gana con Ripley y Adidas" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="{{url()}}/" />
-		<meta property="og:image" content="{{url()}}/images/compartir.png" />
+		<meta property="og:image" content="{{url()}}/images/compartir.jpg" />
 		<meta property="og:site_name" content="Gana con Ripley y Adidas" />
 		<meta property="og:description" content="Entra a www.reto42klima.com y gana membresías en el gimnasio de Vanna Coach." />
 		<script>
