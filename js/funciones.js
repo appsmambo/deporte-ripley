@@ -59,6 +59,7 @@ $(document).ready(function () {
 			dataType: 'json',
 			success: function (data) {
 				var html;
+				html = '<option>Provincia</option>';
 				$.each(data, function (i, item) {
 					html += '<option value="' + item.id + '">' + toTitleCase(item.provincia.toLowerCase()) + '</option>';
 				});
@@ -80,6 +81,7 @@ $(document).ready(function () {
 			dataType: 'json',
 			success: function (data) {
 				var html;
+				html = '<option>Distrito</option>';
 				$.each(data, function (i, item) {
 					html += '<option value="' + item.id + '">' + toTitleCase(item.distrito.toLowerCase()) + '</option>';
 				});

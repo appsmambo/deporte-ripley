@@ -65,7 +65,7 @@ class HomeController extends BaseController {
 			$registro->distrito		= Input::get('distrito');
 			$registro->codigo		= Input::get('codigo');
 			$registro->newsletter	= Input::get('newsletter');
-			$registro->ip			= $_SERVER['REMOTE_ADDR'];
+			$registro->ip			= Request::getClientIp(true);
 
 			$registro->save();
 
