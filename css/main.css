@@ -165,7 +165,7 @@ footer .col-sm-2 img{
 	
 }
 .registro-content .dni{
-	padding:0 10px;
+	padding:0 17px;
 }
 .container-inputs{
 	margin:0 0 10px 0;
@@ -266,12 +266,16 @@ input.error{
 	}
 	.columnas-deportes{
 		height:auto !important;
+		padding-bottom: 20px;
 	}
 	body{
 		overflow: auto;
 	}
 	footer{
 		position:inherit;
+	}
+	#container-premios{
+		margin-top:15%;
 	}
 }
 @media (max-width:520px) {
