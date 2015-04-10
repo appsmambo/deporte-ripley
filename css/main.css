@@ -108,11 +108,17 @@ footer .col-sm-2 img{
 	height:30px;
 	color:#000;
 }
+.registro-content select{
+	color:#000;
+	font-family: Arial !important;
+	
+}
 .registro-content .dni{
 	padding:0 5px;
 }
 .container-inputs{
 	margin:0 0 8px 0;
+	position:relative;
 }
 .container-inputs .codigo{
 	font-family: Arial;
@@ -122,4 +128,36 @@ footer .col-sm-2 img{
 .registro-content .container-inputs .informacion label{
 	font-family: Arial ;
 	font-size: 13px;
+}
+.container-inputs .selects{
+	position: relative;
+	padding: 0 0;
+	font-family: Arial !important;
+}
+select#departamento, select#provincia, select#distrito{
+   position:relative;
+   z-index:999;
+   width:95% !important;
+   height:30px !important;
+   line-height:26px;
+   cursor:pointer;
+   border:0;
+   color:#000;
+   font-size:15px;
+}
+span.select1, span.select2, span.select3{
+    position:absolute;
+    top:0px;
+    left:0;
+    width:98%;
+    height:30px;
+    line-height:36px;
+    text-indent:10px;
+    background:url('../images/select.jpg') no-repeat right;
+    cursor:pointer;
+    z-index:0;
+    border:0;
+    color:#000;
+    font-size:15px;
+    line-height:26px;
 }

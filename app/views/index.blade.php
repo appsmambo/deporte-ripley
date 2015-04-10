@@ -73,52 +73,22 @@
 								<input class="col-sm-8" type="email" name="email" id="email" required value="{{Input::old('email')}}" class="{{$errors->has('email') ? 'error' : ''}}" maxlength="100">
 							</div>
 							<div class="container-inputs clearfix">
-								<label class="col-sm-4">distrito:  </label>
-								<select class="col-sm-8" name="distrito" id="distrito" required class="{{$errors->has('distrito') ? 'error' : ''}}">
-									<option value="Lima Cercado">Lima Cercado</option>
-									<option value="Lima Cercado">Ancón
-									<option value="Lima Cercado"><option value="Lima Cercado">Ate
-									<option value="Lima Cercado">Barranco</option>
-									<option value="Lima Cercado">Breña</option>
-									<option value="Lima Cercado">Carabayllo</option>
-									<option value="Lima Cercado">Chaclacayo</option>
-									<option value="Lima Cercado">Chorrillos</option>
-									<option value="Lima Cercado">Cieneguilla</option>
-									<option value="Lima Cercado">Comas</option>
-									<option value="Lima Cercado">El Agustino</option>
-									<option value="Lima Cercado">Independencia</option>
-									<option value="Lima Cercado">Jesús María</option>
-									<option value="Lima Cercado">La Molina</option>
-									<option value="Lima Cercado">La Victoria</option>
-									<option value="Lima Cercado">Lince</option>
-									<option value="Lima Cercado">Los Olivos</option>
-									<option value="Lima Cercado">Lurigancho-Chosica</option>
-									<option value="Lima Cercado">Lurin</option>
-									<option value="Lima Cercado">Magdalena del Mar</option>
-									<option value="Lima Cercado">Pueblo Libre</option>
-									<option value="Lima Cercado">Miraflores</option>
-									<option value="Lima Cercado">Pachacámac</option>
-									<option value="Lima Cercado">Pucusana</option>
-									<option value="Lima Cercado">Puente Piedra</option>
-									<option value="Lima Cercado">Punta Hermosa</option>
-									<option value="Lima Cercado">Punta Negra</option>
-									<option value="Lima Cercado">Rímac</option>
-									<option value="Lima Cercado">San Bartolo</option>
-									<option value="Lima Cercado">San Borja</option>
-									<option value="Lima Cercado">San Isidro</option>
-									<option value="Lima Cercado">San Juan de Lurigancho</option>
-									<option value="Lima Cercado">San Juan de Miraflores</option>
-									<option value="Lima Cercado">San Luis</option>
-									<option value="Lima Cercado">San Martín de Porres</option>
-									<option value="Lima Cercado">San Miguel</option>
-									<option value="Lima Cercado">Santa Anita</option>
-									<option value="Lima Cercado">Santa María del Mar</option>
-									<option value="Lima Cercado">Santa Rosa</option>
-									<option value="Lima Cercado">Santiago de Surco</option>
-									<option value="Lima Cercado">Surquillo</option>
-									<option value="Lima Cercado">Villa El Salvador</option>
-									<option value="Lima Cercado">Villa María del Triunfo</option>
-								</select>
+								<label class="col-sm-4">D /P /distrito  </label>
+								<div class="col-sm-3 selects">
+									<select  name="departamento" id="departamento" required class="{{$errors->has('distrito') ? 'error' : ''}}">
+										<option value="lima">Lima</option>
+									</select>
+								</div>
+								<div class="col-sm-3 selects">
+									<select  name="distrito" id="distrito" required class="{{$errors->has('distrito') ? 'error' : ''}}">
+										<option value="lima">Lima</option>
+									</select>
+								</div>
+								<div class="col-sm-2 selects">
+									<select  name="distrito" id="distrito" required class="{{$errors->has('distrito') ? 'error' : ''}}">
+										<option value="lima">Lima</option>
+									</select>
+								</div>
 							</div>
 							<div class="container-inputs clearfix">
 								<label class="col-sm-4">código suscripcion </label>
