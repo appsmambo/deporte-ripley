@@ -3,7 +3,7 @@ function toTitleCase(str) {
 }
 $(document).ready(function () {
 	var content = $(window).height() - 130;
-	$('#container-registro, .columnas-deportes').height(content);
+	$('#container-registro, .columnas-deportes, #container-premios').height(content);
 	$('select#departamento').each(function () {
 		var title = 'Seleccione';
 		if ($('option:selected', this).val() != '')
@@ -104,4 +104,7 @@ $(document).ready(function () {
 			type: 'POST'
 		});
 	});
+	$.scrollIt({           // key code to navigate to the previous section
+		easing: 'linear'          // offste (in px) for fixed top navigation
+	  });
 });

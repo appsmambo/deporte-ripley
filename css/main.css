@@ -17,6 +17,9 @@ body{
 	color:#fff;
 	overflow: hidden;
 }
+a:hover{
+	text-decoration: none;
+}
 header, footer{
 	background:#000;
 	position:fixed;
@@ -33,7 +36,7 @@ header .col-sm-6.home{
 	padding-left:30px;
 	margin-top:10px;
 }
-header .col-sm-6.home span{
+header .col-sm-6.home a{
 	margin:0;
 	padding:0 0 0 32px;
 	background:url('../images/icono-home.png') no-repeat left 0;
@@ -41,6 +44,7 @@ header .col-sm-6.home span{
 	cursor:pointer;
 	height:17px;
 	width:80px;
+	color:#fff;
 }
 header .col-sm-6.redes{
 	padding-right: 30px;
@@ -50,8 +54,9 @@ header .col-sm-6.redes section{
 	width:400px;
 	float:right;
 }
-header .col-sm-6.redes span{
+header .col-sm-6.redes a.concurso{
 	display:inline-block;
+	color:#fff;
 	background:url('../images/flecha.png') no-repeat left 7px;
 	padding-left:23px;
 	margin:0 10px;
@@ -78,17 +83,15 @@ footer .col-sm-2 img{
 }
 #container-registro{
 	padding-top:10px;
+	width:100%;
 }
 #container-premios{
 	background:url('../images/fondo-premios.jpg') no-repeat top center;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
-	height:100%;
+	margin-top:50px;
 	width:100%;
-	position:absolute;
-	top:0;
-	left:0;
 }
 .content-deportes-1{
 	background:url('../images/deporte-1.jpg') no-repeat right;

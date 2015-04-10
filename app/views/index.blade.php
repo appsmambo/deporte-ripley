@@ -16,7 +16,7 @@
 		<script type="text/javascript" src="{{url()}}/js/modernizr.custom.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
-		<script type="text/javascript" src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
+		<script type="text/javascript" src="{{url()}}/js/scrollIt.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/funciones.js"></script>
 		<script>
 			var urlBase = '{{url()}}';
@@ -35,12 +35,12 @@
 		<header>
 			<div class="container">
 				<div class="col-sm-6 home">
-					<span>home</span>
+					<a data-scroll-nav="0">home</a>
 				</div>
 				<div class="col-sm-6 redes">
 					<section>
 						<img src="{{url()}}/images/adidas.png" alt="adidas"/>
-						<span>concurso</span>
+						<a class="concurso" data-scroll-nav="1">concurso</a>
 						<a href="#" target="_blank"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
 						<a href="#" target="_blank"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
 						<a href="#" target="_blank"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 		</header>
-		<section id="container-registro" class="container-fluid">
+		<section id="container-registro" class="container-fluid" data-scroll-index="0">
 			<div class="row">
 				<div class="col-sm-6 content-deportes-1 columnas-deportes">
 
@@ -120,7 +120,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="container-premios" >
+		<section id="container-premios" data-scroll-index="1">
 			<div class="container premios">
 				<div class="col-sm-6 vannia"><img src="{{url()}}/images/vania-coach.png" alt="Vannia"  class="img-responsive"/></div>
 				<div class="col-sm-6 premios-content"><img src="{{url()}}/images/premios.png" alt="Premios"  class="img-responsive"/></div>
