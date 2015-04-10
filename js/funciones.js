@@ -119,4 +119,41 @@ $(document).ready(function () {
 	$("footer .col-sm-10 span").click(function () {
 		$("#terminos-layer").fadeIn("slow");
 	});
+	$("#signupForm").validate({
+		rules: {
+			nombres: "required",
+			apellidos: "required",
+			dni: "required",
+			email: {
+				required: true,
+				email: true
+			},
+			dni: "required",
+			dni: "required",
+			dni: "required",
+			agree: "required"
+		},
+		messages: {
+			firstname: "Please enter your firstname",
+			lastname: "Please enter your lastname",
+			username: {
+				required: "Please enter a username",
+				minlength: "Your username must consist of at least 2 characters"
+			},
+			password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			},
+			confirm_password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long",
+				equalTo: "Please enter the same password as above"
+			},
+			email: "Please enter a valid email address",
+			agree: "Please accept our policy"
+		}
+	});
+	$('.numbersOnly').keyup(function () {
+		this.value = this.value.replace(/[^0-9\.]/g, '');
+	});
 });
