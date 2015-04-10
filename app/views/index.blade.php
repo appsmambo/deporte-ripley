@@ -16,6 +16,7 @@
 		<script type="text/javascript" src="{{url()}}/js/modernizr.custom.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
+		<script type="text/javascript" src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/funciones.js"></script>
 		<script>
 			var urlBase = '{{url()}}';
@@ -49,7 +50,7 @@
 				</div>
 			</div>
 		</header>
-		<section id="container-registro" class="container-fluid ">
+		<section id="container-registro" class="container-fluid">
 			<div class="row">
 				<div class="col-sm-6 content-deportes-1 columnas-deportes">
 
@@ -119,8 +120,11 @@
 				</div>
 			</div>
 		</section>
-		<section id="container-premios" class="none">
-
+		<section id="container-premios" >
+			<div class="container premios">
+				<div class="col-sm-6 vannia"><img src="{{url()}}/images/vania-coach.png" alt="Vannia"  class="img-responsive"/></div>
+				<div class="col-sm-6 premios-content"><img src="{{url()}}/images/premios.png" alt="Premios"  class="img-responsive"/></div>
+			</div>
 		</section>
 		<footer>
 			<div class="container">

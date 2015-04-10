@@ -15,6 +15,7 @@ body{
 	font-size:16px;
 	padding:55px 0;
 	color:#fff;
+	overflow: hidden;
 }
 header, footer{
 	background:#000;
@@ -191,4 +192,18 @@ span.select1, span.select2, span.select3{
 	margin:0 auto;
 	width:120px;
 	display: block;
+}
+.container.premios{
+	position: relative;
+	height: 100%;
+}
+.vannia{
+	position: absolute;
+	top:65px;
+	left:0;
+}
+.premios-content{
+	position: absolute;
+	bottom:65px;
+	right:0;
 }
