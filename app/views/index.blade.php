@@ -6,7 +6,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<!--title-->
-		<title>Ripley Deportes</title>
+		<title>Gana con Ripley y Adidas</title>
 
 		<!--CSS-->
 		<link href="{{url()}}/css/bootstrap.min.css" rel="stylesheet">
