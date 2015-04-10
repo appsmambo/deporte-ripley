@@ -19,7 +19,7 @@
 		<script type="text/javascript" src="{{url()}}/js/scrollIt.min.js"></script>
 		<script type="text/javascript" src="{{url()}}/js/funciones.js?ver=1.10"></script>
 		<script>
-			var urlBase = '{{url()}}';
+var urlBase = '{{url()}}';
 		</script>
 		<!--meta property="og:title" content="Timbradores Anónimos" />
 		<meta property="og:type" content="website" />
@@ -52,8 +52,33 @@
 				</div>
 			</div>
 		</header>
+		<div class="layer-terminos-gracias none" id="gracias--layer">
+			<div class="content-a">
+				<div class="content-b">
+					<div class="container-fluid">
+						<div class="col-sm-6 col-sm-offset-3">
+							<img src="images/gracias.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layer-terminos-gracias none" id="terminos-layer">
+			<div class="content-a">
+				<div class="content-b">
+					<div class="container-fluid">
+						<div class="col-sm-6 col-sm-offset-3">
+							.C.E.A. Máxima 149.59%. Ejemplo: Cálculo referencial efectuado con la tasa máxima según tarifario y considerando un consumo total de S/. 1,000 a 12 meses. Si mantuviera saldo de S/. 10 o más en su tarjeta de crédito, se le cargará S/. 5.90 mensual por concepto de seguro de desgravamen. En caso corresponda, aplicará una comisión mensual por envío físico de estado de cuenta de S/. 6.90. En caso de incumplimiento en el pago, aplicará penalidad por pago fuera de fecha según tarifario vigente. I.T.F (0.005%). (*)Si usted opta realizar su compra en cuotas, el valor final de las mismas podría variar en función a la fecha de desembolso, facturación y pago del cliente. Mayor información de condiciones, restricciones y tarifas en www.bancoripley.com.pe y/o Agencias ubicadas dentro de las Tiendas Ripley. Condiciones: Promoción valida del 11/04/15 al 03/05/15 y/o agotar stock. Stock mínimo 3 unidades. Fotos referenciales. No acumulables con otras promociones. Válido sólo para consumo familiar (máx. 3 productos por cliente o tarjeta). Productos ahora o nunca son exclusivos con Tarjeta Ripley. No aplica para compras en Tienda Virtual Ripley. RD N° 0998-2015–ONAGI–DGAE–DA de “PROMOCIÓN ADIDAS– VANNA COACH”, para mayor información ingresa a www.reto42klima.com; y RD N° 1044-2015–ONAGI–DGAE–DA de “PROMOCIÓN POWERADE REVISTA DEPORTES ABRIL”, para mayor información ingresa a www.ripley.com.pe
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<section id="container-registro" class="container-fluid" data-scroll-index="0">
+
+
 			<div class="row">
+
 				<div class="col-sm-6 content-deportes-1 columnas-deportes">
 
 				</div>
@@ -63,8 +88,8 @@
 							<img src="{{url()}}/images/frase.png" alt="facebook" class="img-responsive frase" />
 							<form action="#" id="registro" name="registro">
 								<div class="container-inputs clearfix">
-										<label class="col-sm-4">nombres:</label>
-										<input class="col-sm-8"  type="text" name="nombres" id="nombres" required value="{{Input::old('nombres')}}" class="{{$errors->has('nombres') ? 'error' : ''}}" maxlength="50">
+									<label class="col-sm-4">nombres:</label>
+									<input class="col-sm-8"  type="text" name="nombres" id="nombres" required value="{{Input::old('nombres')}}" class="{{$errors->has('nombres') ? 'error' : ''}}" maxlength="50">
 								</div>
 								<div class="container-inputs clearfix">
 									<label class="col-sm-4">apellidos:</label>
