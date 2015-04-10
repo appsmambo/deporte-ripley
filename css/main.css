@@ -23,6 +23,7 @@ header, footer{
 	height:55px;
 	width:100%;
 	padding-top:8px;
+	z-index: 2;
 }
 header{
 	top: 0;
@@ -71,22 +72,36 @@ footer .col-sm-2 img{
 	float:right;
 	width:80%;
 }
+.none{
+	display: none;
+}
 #container-registro{
 	padding-top:10px;
+}
+#container-premios{
+	background:url('../images/fondo-premios.jpg') no-repeat top center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
 }
 .content-deportes-1{
 	background:url('../images/deporte-1.jpg') no-repeat right;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
-	height:100px;
+	height:100%;
 }
 .content-deportes-2{
 	background:url('../images/deporte-2.jpg') no-repeat;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
-	height:100px;
+	height:100%;
 }
 .registro-content{
 	background:#be006c;
