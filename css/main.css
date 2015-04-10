@@ -55,10 +55,14 @@ header .col-sm-6.redes section{
 header .col-sm-6.redes a.concurso{
 	display:inline-block;
 	color:#fff;
-	background:url('../images/flecha.png') no-repeat left 7px;
+	background:url('../images/flecha-top.png') no-repeat left 7px;
 	padding-left:23px;
 	margin:0 10px;
 	cursor:pointer;
+}
+header .col-sm-6.redes a.concurso.active{
+	background:url('../images/concurso-flecha.jpg') no-repeat left 7px;
+	color:#c20984;
 }
 footer{
 	bottom: 0;
@@ -236,6 +240,18 @@ label.error{
 }
 input.error{
 	border:1px solid red !important;
+}
+.uno-terminos{
+	display: block;
+}
+.dos-terminos{
+	display: none;
+}
+.btn-close{
+	float:right;
+	display: block;
+	margin-bottom: 10px;
+	cursor: pointer;
 }
 @media (max-width:767px) {
 	.content-deportes-1, .content-deportes-2{

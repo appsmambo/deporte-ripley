@@ -94,6 +94,15 @@ $(document).ready(function () {
 	});
 	$("footer .col-sm-10 span").click(function () {
 		$("#terminos-layer").fadeIn("slow");
+		$("footer .col-sm-10 span img.uno-terminos").fadeOut("fast", function(){
+			$("footer .col-sm-10 span img.dos-terminos").fadeIn("fast");
+		});
+	});
+	$(".btn-close").click(function () {
+		$("#terminos-layer").fadeOut("slow");
+		$("footer .col-sm-10 span img.dos-terminos").fadeOut("fast", function(){
+			$("footer .col-sm-10 span img.uno-terminos").fadeIn("fast");
+		});
 	});
 	$("#registro").validate({
 		rules: {
