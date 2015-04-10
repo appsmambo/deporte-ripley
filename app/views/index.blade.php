@@ -113,27 +113,27 @@
 							<img src="{{url()}}/images/frase.png" alt="facebook" class="img-responsive frase" />
 							<form action="#" id="registro" name="registro">
 								<div class="container-inputs clearfix">
-									<label class="col-sm-4">nombres:</label>
-									<input class="col-sm-8"  type="text" name="nombres" id="nombres" required maxlength="50">
+									<label class="col-sm-4 col-xs-4">nombres:</label>
+									<input class="col-sm-8 col-xs-8"  type="text" name="nombres" id="nombres" required maxlength="50">
 								</div>
 								<div class="container-inputs clearfix">
-									<label class="col-sm-4">apellidos:</label>
-									<input class="col-sm-8" type="text" name="apellidos" id="apellidos" required maxlength="50">
+									<label class="col-sm-4 col-xs-4">apellidos:</label>
+									<input class="col-sm-8 col-xs-8" type="text" name="apellidos" id="apellidos" required maxlength="50">
 								</div>
 								<div class="container-inputs clearfix">
-									<label class="col-sm-4"> teléfono/<br/>celular:</label>
-									<input class="col-sm-3" type="tel" name="telefono" id="telefono" required maxlength="50">
-									<label class="col-sm-2 dni"> dni:  </label>
-									<input class="col-sm-3" type="tel" name="dni" id="dni" required maxlength="8">
+									<label class="col-sm-4 col-xs-4"> teléfono/<br/>celular:</label>
+									<input class="col-sm-3 col-xs-3" type="tel" name="telefono" id="telefono" required maxlength="50">
+									<label class="col-sm-2 col-xs-2 dni"> dni:  </label>
+									<input class="col-sm-3 col-xs-3" type="tel" name="dni" id="dni" required maxlength="8">
 								</div>
 								<div class="container-inputs clearfix">
-									<label class="col-sm-4">mail: </label>
-									<input class="col-sm-8" type="email" name="email" id="email" required maxlength="100">
+									<label class="col-sm-4 col-xs-4">mail: </label>
+									<input class="col-sm-8 col-xs-8" type="email" name="email" id="email" required maxlength="100">
 								</div>
 								<div class="container-inputs clearfix">
-									<label class="col-sm-4">D /P /distrito  </label>
-									<div class="col-sm-8 selects">
-										<div class="col-sm-4 selects">
+									<label class="col-sm-4 col-xs-4">D /P /distrito  </label>
+									<div class="col-sm-8 col-xs-8 selects">
+										<div class="col-sm-4 col-xs-4 selects">
 											<select name="departamento" id="departamento">
 												<option value="0">Departamento</option>
 												@foreach ($departamentos as $departamento)
@@ -141,12 +141,12 @@
 												@endforeach
 											</select>
 										</div>
-										<div class="col-sm-4 selects">
+										<div class="col-sm-4 col-xs-4 selects">
 											<select name="provincia" id="provincia">
 												<option value="0">Provincia</option>
 											</select>
 										</div>
-										<div class="col-sm-4 selects">
+										<div class="col-sm-4 col-xs-4 selects">
 											<select name="distrito" id="distrito">
 												<option value="0">Distrito</option>
 											</select>
@@ -154,20 +154,20 @@
 									</div>
 								</div>
 								<div class="container-inputs clearfix">
-									<label class="col-sm-4">código suscripcion </label>
-									<input class="col-sm-8" type="tel" name="codigo" id="codigo" required maxlength="13">
+									<label class="col-sm-4 col-xs-4">código suscripcion </label>
+									<input class="col-sm-8 col-xs-8" type="tel" name="codigo" id="codigo" required maxlength="13">
 								</div>
 								<div class="container-inputs clearfix">
-									<div class="col-sm-4 codigo"> *encuentra tu código al final  de tu ticket de compra</div>
-									<div class="col-sm-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" value="1" /></div>
+									<div class="col-sm-4 col-xs-4 codigo"> *encuentra tu código al final  de tu ticket de compra</div>
+									<div class="col-sm-8 col-xs-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" value="1" /></div>
 								</div>
 								<input type="image" src="{{url()}}/images/btn-enviar.png" value="enviar" id="enviar" class="btn-enviar">
 							</form>
 						</div>
 
 					</div>
-					<div class="col-sm-7 none columnas-deportes content-deportes-3 none"></div>
-					<div class="col-sm-5 content-deportes-2 columnas-deportes">
+					<div class="col-sm-7 col-xs-7 none columnas-deportes content-deportes-3 none"></div>
+					<div class="col-sm-5 col-xs-5 content-deportes-2 columnas-deportes">
 
 					</div>
 				</div>
@@ -175,20 +175,20 @@
 		</section>
 		<section id="container-premios" data-scroll-index="1">
 			<div class="container premios">
-				<div class="col-sm-6 vannia"><img src="{{url()}}/images/vania-coach.png" alt="Vannia"  class="img-responsive"/></div>
-				<div class="col-sm-6 premios-content"><img src="{{url()}}/images/premios.png" alt="Premios"  class="img-responsive"/></div>
+				<div class="col-sm-6 col-xs-6 vannia"><img src="{{url()}}/images/vania-coach.png" alt="Vannia"  class="img-responsive"/></div>
+				<div class="col-sm-6 col-xs-6 premios-content"><img src="{{url()}}/images/premios.png" alt="Premios"  class="img-responsive"/></div>
 			</div>
 		</section>
 		<footer>
 
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-10">
+					<div class="col-sm-10 col-xs-10">
 						<span>
 							<img src="{{url()}}/images/terminos.jpg" alt="terminos" class="uno-terminos"/>
 							<img src="{{url()}}/images/terminos-active.png" alt="terminos" class="dos-terminos"/></span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-2">
 						<img src="{{url()}}/images/ripley-logo.jpg" alt="ripley" class="img-responsive"/>
 					</div>
 				</div>
