@@ -75,18 +75,21 @@
 							<div class="container-inputs clearfix">
 								<label class="col-sm-4">D /P /distrito  </label>
 								<div class="col-sm-3 selects">
-									<select  name="departamento" id="departamento" required class="{{$errors->has('distrito') ? 'error' : ''}}">
-										<option value="lima">Lima</option>
+									<select name="departamento" id="departamento">
+										<option value="0">Departamento</option>
+@foreach ($departamentos as $departamento)
+<option value="{{$departamento['id']}}">{{ucwords(strtolower($departamento['departamento']))}}</option>
+@endforeach
 									</select>
 								</div>
 								<div class="col-sm-3 selects">
-									<select  name="distrito" id="distrito" required class="{{$errors->has('distrito') ? 'error' : ''}}">
-										<option value="lima">Lima</option>
+									<select name="provincia" id="provincia">
+										<option value="0">Provincia</option>
 									</select>
 								</div>
 								<div class="col-sm-2 selects">
-									<select  name="distrito" id="distrito" required class="{{$errors->has('distrito') ? 'error' : ''}}">
-										<option value="lima">Lima</option>
+									<select name="distrito" id="distrito">
+										<option value="0">Distrito</option>
 									</select>
 								</div>
 							</div>
@@ -144,6 +147,26 @@
 							$('#info')
 									.append($title)
 									.append($description);*/
+						},
+						type: 'POST'
+					});
+				});
+				$('#departamento').change(function() {
+					var id;
+					id = $(this).val();
+					$.ajax({
+						url: '{{url()}}/getProvincias',
+						data: 'id='+id,
+						error: function () {
+							console.log('error');
+						},
+						dataType: 'json',
+						success: function(data) {
+							var html;
+							$.each(data, function(i, item) {
+								html += '<option value="' + item.id + '">' + item.provincia + '</option>';
+							});
+							$('#provincia').html(html);
 						},
 						type: 'POST'
 					});

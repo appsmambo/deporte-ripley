@@ -3,6 +3,7 @@
 Route::get('/', array('as' => 'index', 'uses' => 'HomeController@index'));
 
 Route::post('/registro', array('as' => 'registro', 'uses' => 'HomeController@ajaxRegistro'));
+Route::post('/getProvincias', array('as' => 'getProvincias', 'uses' => 'HomeController@ajaxProvincias'));
 
 /*
 Route::post('/registro', function()
