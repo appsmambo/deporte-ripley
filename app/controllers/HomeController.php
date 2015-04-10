@@ -35,8 +35,8 @@ class HomeController extends BaseController {
 		);
 		$rules = array(
 			'dni'		=> 'required|digits:8|unique:registro',
-			'nombres'	=> 'required|string',
-			'apellidos'	=> 'required|string',
+			'nombres'	=> 'required',
+			'apellidos'	=> 'required',
 			'telefono'	=> 'required',
 			'email'		=> 'required|email|unique:registro',
 			'distrito'	=> 'required',
@@ -58,13 +58,14 @@ class HomeController extends BaseController {
 		} else {
 			$registro = new Registro;
 			$registro->dni			= Input::get('dni');
-			$registro->nombres		= Input::get('nombres');
-			$registro->apellidos	= Input::get('apellidos');
+			$registro->nombres		= ucwords(Input::get('nombres'));
+			$registro->apellidos	= ucwords(Input::get('apellidos'));
 			$registro->telefono		= Input::get('telefono');
 			$registro->email		= Input::get('email');
 			$registro->distrito		= Input::get('distrito');
 			$registro->codigo		= Input::get('codigo');
 			$registro->newsletter	= Input::get('newsletter');
+			$registro->ip			= Request::getClientIp();
 
 			$registro->save();
 

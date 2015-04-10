@@ -58,7 +58,10 @@ $(document).ready(function () {
 			dataType: 'json',
 			success: function (data) {
 				if (data.success == 'error') {
-					console.log(data);
+					$("#error-layer").fadeIn("slow");
+					setTimeout(function () {
+						$("#error-layer").fadeOut("slow");
+					}, 5000);
 				} else {
 					$("#gracias-layer").fadeIn("slow");
 					setTimeout(function () {
