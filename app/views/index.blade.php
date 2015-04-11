@@ -73,8 +73,8 @@ var urlBase = '{{url()}}';
 			<div class="content-a">
 				<div class="content-b">
 					<div class="container-fluid">
-						<div class="col-sm-6 col-sm-offset-3">
-							<img src="images/gracias.png" />
+						<div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+							<img src="images/gracias.png" class="img-responsive"/>
 						</div>
 					</div>
 				</div>
@@ -83,11 +83,11 @@ var urlBase = '{{url()}}';
 		<div class="layer-terminos-gracias none" id="terminos-layer">
 			<div class="content-a">
 				<div class="content-b">
-					<div class="container-fluid">
-						<div class="col-sm-6 col-sm-offset-3">
+					<div class="container-fluid condiciones">
+						<div class="col-sm-6 col-sm-offset-3 content-condiciones">
 							<img src="images/close.jpg" class="btn-close">
 							<div class="clearfix"></div>
-							.C.E.A. Máxima 149.59%. Ejemplo: Cálculo referencial efectuado con la tasa máxima según tarifario y considerando un consumo total de S/. 1,000 a 12 meses. Si mantuviera saldo de S/. 10 o más en su tarjeta de crédito, se le cargará S/. 5.90 mensual por concepto de seguro de desgravamen. En caso corresponda, aplicará una comisión mensual por envío físico de estado de cuenta de S/. 6.90. En caso de incumplimiento en el pago, aplicará penalidad por pago fuera de fecha según tarifario vigente. I.T.F (0.005%). (*)Si usted opta realizar su compra en cuotas, el valor final de las mismas podría variar en función a la fecha de desembolso, facturación y pago del cliente. Mayor información de condiciones, restricciones y tarifas en www.bancoripley.com.pe y/o Agencias ubicadas dentro de las Tiendas Ripley. Condiciones: Promoción valida del 11/04/15 al 03/05/15 y/o agotar stock. Stock mínimo 3 unidades. Fotos referenciales. No acumulables con otras promociones. Válido sólo para consumo familiar (máx. 3 productos por cliente o tarjeta). Productos ahora o nunca son exclusivos con Tarjeta Ripley. No aplica para compras en Tienda Virtual Ripley. RD N° 0998-2015–ONAGI–DGAE–DA de “PROMOCIÓN ADIDAS– VANNA COACH”, para mayor información ingresa a www.reto42klima.com; y RD N° 1044-2015–ONAGI–DGAE–DA de “PROMOCIÓN POWERADE REVISTA DEPORTES ABRIL”, para mayor información ingresa a www.ripley.com.pe
+							<div class="terminos-alto">.C.E.A. Máxima 149.59%. Ejemplo: Cálculo referencial efectuado con la tasa máxima según tarifario y considerando un consumo total de S/. 1,000 a 12 meses. Si mantuviera saldo de S/. 10 o más en su tarjeta de crédito, se le cargará S/. 5.90 mensual por concepto de seguro de desgravamen. En caso corresponda, aplicará una comisión mensual por envío físico de estado de cuenta de S/. 6.90. En caso de incumplimiento en el pago, aplicará penalidad por pago fuera de fecha según tarifario vigente. I.T.F (0.005%). (*)Si usted opta realizar su compra en cuotas, el valor final de las mismas podría variar en función a la fecha de desembolso, facturación y pago del cliente. Mayor información de condiciones, restricciones y tarifas en www.bancoripley.com.pe y/o Agencias ubicadas dentro de las Tiendas Ripley. Condiciones: Promoción valida del 11/04/15 al 03/05/15 y/o agotar stock. Stock mínimo 3 unidades. Fotos referenciales. No acumulables con otras promociones. Válido sólo para consumo familiar (máx. 3 productos por cliente o tarjeta). Productos ahora o nunca son exclusivos con Tarjeta Ripley. No aplica para compras en Tienda Virtual Ripley. RD N° 0998-2015–ONAGI–DGAE–DA de “PROMOCIÓN ADIDAS– VANNA COACH”, para mayor información ingresa a www.reto42klima.com; y RD N° 1044-2015–ONAGI–DGAE–DA de “PROMOCIÓN POWERADE REVISTA DEPORTES ABRIL”, para mayor información ingresa a www.ripley.com.pe</div>
 						</div>
 					</div>
 				</div>
@@ -163,7 +163,7 @@ var urlBase = '{{url()}}';
 											</div>
 										</div>
 										<div class="container-inputs clearfix">
-											<label class="col-sm-4 col-xs-4">código suscripcion </label>
+											<label class="col-sm-4 col-xs-4 label-suscripcion">código suscripcion </label>
 											<input class="col-sm-8 col-xs-8" type="tel" name="codigo" id="codigo" required maxlength="13">
 										</div>
 										<div class="container-inputs clearfix">
@@ -193,17 +193,17 @@ var urlBase = '{{url()}}';
 
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-10 col-xs-10">
+					<div class="col-sm-10 col-xs-9">
 						<span>
 							<img src="{{url()}}/images/terminos.jpg" alt="terminos" class="uno-terminos terminos-footer"/>
 							<img src="{{url()}}/images/terminos-active.png" alt="terminos" class="dos-terminos terminos-footer"/></span>
-							<a href="https://www.facebook.com/RipleyPeru" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
+						<div style="margin-top: 5px;"><a href="https://www.facebook.com/RipleyPeru" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/facebook.jpg" alt="facebook"/></a>
 							<a href="https://twitter.com/ripleyenperu" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/twitter.jpg" alt="twitter"/></a>
 							<a href="https://instagram.com/ripleyperu/" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/instagram.jpg" alt="instagram"/></a>
 							<a href="https://www.youtube.com/user/TiendasRipleyPeru" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/youtube.jpg" alt="youtube"/></a>
-							<a href="https://www.pinterest.com/ripleyperu/" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a>
+							<a href="https://www.pinterest.com/ripleyperu/" target="_blank" class="iconos-redes-footer"><img src="{{url()}}/images/pinterest.jpg" alt="pinterest"/></a></div>
 					</div>
-					<div class="col-sm-2 col-xs-2">
+					<div class="col-sm-2 col-xs-3">
 						<img src="{{url()}}/images/ripley-logo.jpg" alt="ripley" class="img-responsive"/>
 					</div>
 				</div>

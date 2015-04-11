@@ -277,9 +277,14 @@ input.error{
 .iconos-redes-footer{
 	display: none;
 }
+@media (max-width:1255px) {
+	label-suscripcion{
+		font-size:15px;
+	}
+}
 @media (max-width:767px) {
-	.content-deportes-1, .content-deportes-2{
-		display:none;
+	.content-deportes-1, .content-deportes-2, .content-deportes-3{
+		display:none !important;
 	}
 	.columnas-deportes{
 		height:auto !important;
@@ -296,6 +301,12 @@ input.error{
 	}
 	body{
 		padding-bottom:0;
+	}
+	.layer-terminos-gracias{
+		position:fixed;
+	}
+	.registro-content{
+		display: block !important;
 	}
 }
 @media (max-width:520px) {
@@ -318,4 +329,29 @@ input.error{
 	footer .col-sm-10{
 		text-align: left;
 	}
+	.registro-content label{
+		font-size:10px;
+		line-height: 13px;
+	}
+	.registro-content .dni{
+		padding:0 12px;
+	}
+	footer{
+		height:70px;
+	}
+	#container-premios{
+		margin-top:55%;
+	}
+	.terminos-alto{
+		height:300px;
+		overflow: auto;
+	}
+	.content-condiciones{
+		margin-left:2%;
+		width:96%;
+	}
+	.container-fluid.condiciones{
+		padding:0;
+	}
 }
+
