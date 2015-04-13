@@ -140,7 +140,7 @@ var urlBase = '{{url()}}';
 											<input class="col-sm-8 col-xs-8" type="email" name="email" id="email" required maxlength="100">
 										</div>
 										<div class="container-inputs clearfix">
-											<label class="col-sm-4 col-xs-4">D /P /distrito  </label>
+											<label class="col-sm-4 col-xs-4">ubicación  </label>
 											<div class="col-sm-8 col-xs-8 selects">
 												<div class="col-sm-4 col-xs-4 selects">
 													<select name="departamento" id="departamento">
@@ -163,12 +163,16 @@ var urlBase = '{{url()}}';
 											</div>
 										</div>
 										<div class="container-inputs clearfix">
-											<label class="col-sm-4 col-xs-4 label-suscripcion">código suscripcion </label>
-											<input class="col-sm-8 col-xs-8" type="tel" name="codigo" id="codigo" required maxlength="13">
-										</div>
-										<div class="container-inputs clearfix">
-											<div class="col-sm-4 col-xs-4 codigo"> *encuentra tu código al final  de tu ticket de compra</div>
-											<div class="col-sm-8 col-xs-8 informacion"><label>Deseo recibir información de Ripley</label><input type="checkbox" name="newsletter" id="newsletter" value="1" /></div>
+											<label class="col-sm-4 col-xs-4 label-suscripcion">código suscripcion<p class="codigo">*encuentra tu código al final  de tu ticket de compra</p> </label>
+											<div class="col-sm-8 col-xs-8 informacion">
+												<input class="col-sm-12 col-xs-12" type="tel" name="codigo" id="codigo" required maxlength="13">
+												<div class="clearfix"></div>
+												<div style="margin-top:20px;">
+													<label>Deseo recibir información de Ripley</label>
+													<input type="checkbox" name="newsletter" id="newsletter" value="1" />
+												</div>
+											</div>
+
 										</div>
 										<input type="image" src="{{url()}}/images/btn-enviar.png" value="enviar" id="enviar" class="btn-enviar">
 									</form>

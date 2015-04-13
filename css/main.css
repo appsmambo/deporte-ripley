@@ -75,6 +75,7 @@ footer .col-sm-10 span{
 	text-transform: uppercase;
 	display: inline-block;
 	cursor: pointer;
+	margin-left: 20%;
 }
 footer .col-sm-2 img{
 	float:right;
@@ -163,7 +164,8 @@ footer .col-sm-2 img{
 }
 .registro-content label{
 	font-size:17px;
-	line-height: 13px;
+	line-height: 16px;
+	letter-spacing: 1px;
 }
 .registro-content input{
 	border: 0;
@@ -186,16 +188,21 @@ footer .col-sm-2 img{
 	font-family: Arial;
 	font-size: 10px;
 	line-height: 12px;
+	margin:5px 0 0 0;
 }
 .registro-content .container-inputs .informacion {
 	text-align: right;
 	padding-right:0;
-	padding-left:5px;
+	padding-left:0;
 }
 .registro-content .container-inputs .informacion label{
 	font-family: Arial ;
 	font-size: 11px;
 	float:left;
+	display: inline-block;
+	width:85%;
+	text-align: right;
+	letter-spacing: 0;
 }
 .label-line{
 	line-height: 30px !important;
@@ -238,7 +245,7 @@ span.select1, span.select2, span.select3{
 	margin-left:10px;
 }
 .btn-enviar{
-	margin:0 auto;
+	margin:20px auto 0 auto;
 	width:120px;
 	display: block;
 }
