@@ -140,7 +140,7 @@ var urlBase = '{{url()}}';
 											<input class="col-sm-8 col-xs-8" type="email" name="email" id="email" required maxlength="100">
 										</div>
 										<div class="container-inputs clearfix">
-											<label class="col-sm-4 col-xs-4">ubicación  </label>
+											<label class="col-sm-4 col-xs-4 label-line">ubicación  </label>
 											<div class="col-sm-8 col-xs-8 selects">
 												<div class="col-sm-4 col-xs-4 selects">
 													<select name="departamento" id="departamento">
